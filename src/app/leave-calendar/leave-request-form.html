@@ -1,0 +1,25 @@
+<div fxLayout="row wrap">
+
+  <mat-form-field fxFlex="100">
+    <input type="text" matInput [(ngModel)]="leaveEvent.title" placeholder="Subject" required>
+  </mat-form-field>
+  <mat-form-field fxFlex="100">
+    <textarea  matInput [(ngModel)]="leaveEvent.content" placeholder="Reason" style="height: 13vh;" required>
+    </textarea>
+  </mat-form-field>
+  <mat-form-field fxFlex="100">
+    <input matInput [(ngModel)]="leaveEvent.start" [matDatepicker]="fromDatePicker" placeholder="From Date" required>
+    <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #fromDatePicker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field fxFlex="100">
+    <input matInput [(ngModel)]="leaveEvent.end" [matDatepicker]="toDatePicker" placeholder="To Date" required>
+    <mat-datepicker-toggle matSuffix [for]="toDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #toDatePicker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-dialog-actions fxFlex="100" fxFlexAlign="center">
+    <button mat-raised-button color="warn" (click)="cancelForm()">Cancel</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="leaveEvent">Save</button>
+  </mat-dialog-actions>
+</div>

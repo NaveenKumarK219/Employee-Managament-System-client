@@ -1,0 +1,11 @@
+<mat-card fxLayout="row wrap">
+  <div fxFlex="40">
+    <mat-card-title>Leave Calendar</mat-card-title>
+  </div>
+
+  <div fxFlex="60">
+    <button mat-raised-button color="primary" (click)="openLeaveForm()">Apply Leave</button>
+  </div>
+
+  <full-calendar [plugins]="leavesGrid" [events]="leaveEvents"></full-calendar>
+</mat-card>

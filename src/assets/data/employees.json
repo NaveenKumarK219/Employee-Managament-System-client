@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "firstName": "Navin",
+    "lastName": "Kumar",
+    "empId": "H101",
+    "email": "nav@gmail.com",
+    "mobileNo": "9039012345"
+  },
+  {
+    "id": 2,
+    "firstName": "Kevin",
+    "lastName": "Jones",
+    "empId": "H102",
+    "email": "kevin@gmail.com",
+    "mobileNo": "512412345"
+  },
+  {
+    "id": 3,
+    "firstName": "Brei",
+    "lastName": "Larrison",
+    "empId": "H103",
+    "email": "brei@gmail.com",
+    "mobileNo": "4525186523"
+  },
+  {
+    "id": 4,
+    "firstName": "Jason",
+    "lastName": "Bourne",
+    "empId": "H104",
+    "email": "jason@gmail.com",
+    "mobileNo": "5129012345"
+  },
+  {
+    "id": 5,
+    "firstName": "Raman",
+    "lastName": "Narayanan",
+    "empId": "H105",
+    "email": "raman@gmail.com",
+    "mobileNo": "7855012345"
+  }
+]
